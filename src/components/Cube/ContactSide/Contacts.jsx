@@ -2,6 +2,7 @@ import {type} from '../../../utils';
 import {content} from '../../../data';
 import emailjs from 'emailjs-com';
 import './contacts.scss'
+import config from '../../../config';
 
 export const ContactSide = () => {
 
@@ -11,21 +12,32 @@ export const ContactSide = () => {
         const box = document.getElementById('box');
         const form = document.querySelector('form');
 
+        //after submit rotate box to the message side
         box.classList.value = '';
         box.classList.add('rotate');
 
+        //send email and display the message
         emailjs.sendForm(
-            'service_yx4jqa',
+            'service_yx4jqaf',
             'template_1u82alm',
             e.target,
-            'user_3hIFmLZWQw8fFEPF6xpY0')
+            config.emailJsApiKey)
             .then(
-                () => {
+                () => {//message OK
                     type(content.message, 'message-side');
-                    form.reset()
-                },
+                },//message Error
                 () => type(content.error, 'message-side')
             );
+
+        //return to the contact side and clean message
+        setTimeout(() => {
+            box.classList.value = '';
+            box.classList.add('show-bottom');
+            document.querySelector('#message-side').innerHTML = ''
+        },3500);
+
+        //reset the form
+        form.reset()
     };
 
     return (
