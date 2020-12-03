@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+
 html, body, #root, #root>div {
     height: 100%
 }
 body {
     color: #fff;
-    text-shadow: 0px 11px 10px rgba(255,255,255,0.8);
+    text-shadow: 0 0 10px rgba(255,255,255,0.8);
     font-family: 'Cinzel', serif;
     font-size: 2rem;
     @media (max-width: 768px) {

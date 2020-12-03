@@ -1,0 +1,14 @@
+header {
+  font-family: 'Fredericka the Great', cursive;
+  color: white;
+  position: absolute;
+  top: -2.5rem;
+  left: 50%;
+  font-size: 2.6rem;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  img {
+    max-width: 12rem;
+    height: auto;
+  }
+}

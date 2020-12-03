@@ -1,0 +1,28 @@
+.soc {
+  position: absolute;
+  right: -2.5rem;
+  top: 50%;
+  transform: translate(50%, -50%);
+  transition: 1s;
+
+  li {
+    width: 32px;
+    height: 32px;
+    background: white;
+
+    & + li {
+      margin-top: 1rem;
+    }
+  }
+
+  a {
+    background: transparent;
+  }
+
+  svg {
+    transition: all 1s;
+    &:hover {
+      border: 1px solid white;
+    }
+  }
+}

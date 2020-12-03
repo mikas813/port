@@ -1,8 +1,8 @@
 nav {
   position: absolute;
-  left: -45px;
+  left: -2.5rem;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translate(-2.5rem, -50%);
   z-index: 1000;
 
   ul {
@@ -33,6 +33,9 @@ nav {
 
         &:hover {
           left: 6px;
+        }
+        @media (max-width: 768px) {
+          left: -40px;
         }
       }
 

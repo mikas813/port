@@ -1,6 +1,6 @@
-import './index.scss';
 import {content} from '../../data';
 import {type} from '../../utils';
+import './navigation.scss'
 
 export const Navigation = () => {
 

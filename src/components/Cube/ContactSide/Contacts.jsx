@@ -1,7 +1,7 @@
-import './index.scss';
 import {type} from '../../../utils';
 import {content} from '../../../data';
 import emailjs from 'emailjs-com';
+import './contacts.scss'
 
 export const ContactSide = () => {
 
@@ -33,14 +33,14 @@ export const ContactSide = () => {
             <h2>Get in touch</h2>
             <form onSubmit={sendEmail}>
 
-                <label htmlFor="">Enter your e-mail</label>
+                <label htmlFor="">E-mail</label>
                 <input
                     required
                     name="email"
                     type="email"
                 />
 
-                <label htmlFor="">Enter your message</label>
+                <label htmlFor="">Message</label>
                 <textarea
                     required
                     minLength="10"

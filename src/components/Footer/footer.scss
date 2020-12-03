@@ -1,10 +1,12 @@
 footer {
+  text-align: center;
   font-size: 1.6rem;
   color: white;
   position: absolute;
-  bottom: -40px;
+  width: 32rem;
+  bottom: -2.5rem;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, 50%);
   @media (max-width: 768px) {
     font-size: 1.4rem;
   }

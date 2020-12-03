@@ -1,8 +1,7 @@
-import './index.scss'
 import {content} from '../../data';
 import {ContactSide} from './ContactSide/Contacts';
 import {type} from '../../utils'
-
+import './cube.scss'
 
 export const Cube = () => {
 
