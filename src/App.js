@@ -7,10 +7,11 @@ import {Content} from './components/Content';
 import {Cube} from './components/Cube/Cube';
 import React, {useEffect} from 'react';
 import ReactGA from 'react-ga';
+import config from './config';
 
 export const App = () => {
     useEffect(() => {
-        ReactGA.initialize(process.env.REACT_APP_GA_TRAKING);
+        ReactGA.initialize(config.googleAnalytics);
     }, []);
     return (
         <div className="App">
