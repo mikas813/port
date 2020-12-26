@@ -17,13 +17,6 @@ export const Cube = () => {
                     <div className='about-side empty'>
                         <h2>About me</h2>
                         <p id='about-side'/>
-                        <div className='logo-wrapper'>
-                            <img src="/images/ts.png" alt="TypeScript logo"/>
-                            <img src="/images/js.png" alt="JavaScript logo"/>
-                            <img src="/images/html.png" alt="HTML logo"/>
-                            <img src="/images/css.png" alt="CSS logo"/>
-                            <img src="/images/react.png" alt="React logo"/>
-                        </div>
                     </div>
                 </div>
                 <div className="box__face box__face--top">
