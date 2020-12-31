@@ -6,7 +6,10 @@ html, body, #root, #root>div {
 body {
     color: #fff;
     text-shadow: 0 0 10px rgba(255,255,255,0.8);
-    font-family: 'Cinzel', serif;
+    @font-face {
+        font-family: 'Cinzel';
+        font-display: fallback;
+    }
     font-size: 2rem;
     @media (max-width: 768px) {
         font-size: 1.6rem;
