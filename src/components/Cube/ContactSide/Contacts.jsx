@@ -23,19 +23,18 @@ export const ContactSide = () => {
             e.target,
             config.emailJsApiKey)
             .then(
-                () => {//message OK
+                () => {//email sent, success message
                     type(content.message, 'message-side');
-                },//message Error
+                },//email didn't send, error message
                 () => type(content.error, 'message-side')
             );
 
-        //return to the contact side and clean message
+        //return to the contact side and remove message
         setTimeout(() => {
             box.classList.value = '';
             box.classList.add('show-bottom');
             document.querySelector('#message-side').innerHTML = ''
         },3500);
-
         //reset the form
         form.reset()
     };
